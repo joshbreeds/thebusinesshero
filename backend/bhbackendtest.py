@@ -7,7 +7,9 @@ app = Flask(__name__) #Creates Flask Instance
 CORS(app)
 
 # OpenAI API key
-openai.api_key = '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'
+import config
+
+api_key = config.API_KEY
 
 # The chatbot's identity as The Business Hero
 chatbot_identity = "The Business Hero"
