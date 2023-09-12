@@ -18,10 +18,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Set up Python version
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v1
         with:
           python-version: '3.11'
-          node-version: '16'
 
       - name: Create and start virtual environment
         run: |
@@ -61,4 +60,4 @@ jobs:
         with:
           app-name: 'thebusinesshero'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2982DAA2EEBF44928E7E069FFF623EB2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DF5BD20F7B9E44D8B0AC25DB2EF782E2 }}
